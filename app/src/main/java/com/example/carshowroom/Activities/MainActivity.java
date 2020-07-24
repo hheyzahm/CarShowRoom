@@ -1,11 +1,10 @@
-package com.example.carshowroom;
+package com.example.carshowroom.Activities;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
-import android.content.res.Configuration;
-import android.content.res.Resources;
+
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -13,9 +12,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.carshowroom.Fragment.CarListFragment;
+import com.example.carshowroom.ModelClasses.CarsAdapter;
+import com.example.carshowroom.R;
+import com.example.carshowroom.ModelClasses.carDetailsClass;
+
 import java.util.Objects;
 
-public class MainActivity extends AppCompatActivity implements CarsAdapter.OnItemSelected  {
+public class MainActivity extends AppCompatActivity implements CarsAdapter.OnItemSelected {
     FragmentManager manager;
 
     Button  CarInfoButton,OwnerInfoButton,addnewButton,cancel,save;
@@ -250,6 +255,7 @@ public class MainActivity extends AppCompatActivity implements CarsAdapter.OnIte
     @Override
     public void onItemClick(int index) {
 
+
         OwnerName_textView.setText(carDetailsClass.carsDetailClassArrayList.get(index).getOwnerName());
         ownerNumber_textView.setText(carDetailsClass.carsDetailClassArrayList.get(index).getOwnerNumber());
         carname_textView.setText(carDetailsClass.carsDetailClassArrayList.get(index).getCarModel());
@@ -269,5 +275,6 @@ public class MainActivity extends AppCompatActivity implements CarsAdapter.OnIte
         }
 
     }
+
 
 }

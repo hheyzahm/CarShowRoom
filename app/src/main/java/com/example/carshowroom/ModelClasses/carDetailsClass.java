@@ -1,6 +1,8 @@
-package com.example.carshowroom;
+package com.example.carshowroom.ModelClasses;
 
 import android.app.Application;
+
+import com.example.carshowroom.ModelClasses.CARS;
 
 import java.util.ArrayList;
 

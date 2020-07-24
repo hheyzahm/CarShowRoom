@@ -6,13 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".MainActivity"
+    tools:context=".Activities.MainActivity"
     android:id="@+id/Layout_Landscape"
     >
 
     <fragment
         android:id="@+id/list_fragmet"
-        android:name="com.example.carshowroom.CarListFragment"
+        android:name="com.example.carshowroom.Fragment.CarListFragment"
         android:layout_width="0dp"
         app:layout_constraintHorizontal_weight="1"
         android:layout_height="match_parent"
@@ -39,7 +39,7 @@
 
         <fragment
             android:id="@+id/ButtonFragment"
-            android:name="com.example.carshowroom.ButtonFragment"
+            android:name="com.example.carshowroom.Fragment.ButtonFragment"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -47,7 +47,7 @@
 
         <fragment
             android:id="@+id/DetailsFragement"
-            android:name="com.example.carshowroom.DetailsFragment"
+            android:name="com.example.carshowroom.Fragment.DetailsFragment"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"

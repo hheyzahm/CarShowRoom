@@ -1,6 +1,5 @@
-package com.example.carshowroom;
+package com.example.carshowroom.Fragment;
 
-import android.content.ClipData;
 import android.content.Context;
 import android.os.Bundle;
 
@@ -13,7 +12,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
+
+import com.example.carshowroom.ModelClasses.CarsAdapter;
+import com.example.carshowroom.R;
+import com.example.carshowroom.ModelClasses.carDetailsClass;
+
+import java.util.ArrayList;
 
 
 /**
@@ -23,14 +27,10 @@ public class CarListFragment extends Fragment {
 
 
     RecyclerView recyclerView;
-    RecyclerView.Adapter myAdapter;
+    CarsAdapter myAdapter;
     RecyclerView.LayoutManager layoutManager;
-    ItemSelected object;
+    ArrayList carList= carDetailsClass.carsDetailClassArrayList;
     View view;
-    public interface ItemSelected
-    {
-        void onItemSelected(int index);
-    }
 
     public CarListFragment() {
         // Required empty public constructor
@@ -39,6 +39,7 @@ public class CarListFragment extends Fragment {
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
+
     }
 
     @Override
@@ -66,5 +67,5 @@ public class CarListFragment extends Fragment {
         myAdapter.notifyDataSetChanged();
     }
 
-    
+
 }

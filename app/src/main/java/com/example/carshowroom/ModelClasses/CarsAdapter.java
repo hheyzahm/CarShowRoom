@@ -1,8 +1,6 @@
-package com.example.carshowroom;
+package com.example.carshowroom.ModelClasses;
 
 import android.content.Context;
-import android.icu.text.Transliterator;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.carshowroom.R;
+
 import java.util.ArrayList;
 public class CarsAdapter extends RecyclerView.Adapter<CarsAdapter.ViewHolder>  {
 ArrayList<CARS> Cars_ArrayList;
@@ -19,8 +19,6 @@ ArrayList<CARS> Cars_ArrayList;
     public interface OnItemSelected{
         void onItemClick(int index);
     }
-
-
 
     public CarsAdapter(Context context, ArrayList<CARS> cars_ArrayList) {
 
@@ -70,6 +68,7 @@ ArrayList<CARS> Cars_ArrayList;
             imageView_car=itemView.findViewById(R.id.imageView_car);
             CarsNameTextView = itemView.findViewById(R.id.CarsNameTextView);
             OwnerNameTextView=itemView.findViewById(R.id.OwnerNameTextView);
+
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -78,4 +77,6 @@ ArrayList<CARS> Cars_ArrayList;
             });
         }
     }
+
+
 }

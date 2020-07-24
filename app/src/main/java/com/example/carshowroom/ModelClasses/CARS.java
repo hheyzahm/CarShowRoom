@@ -1,4 +1,4 @@
-package com.example.carshowroom;
+package com.example.carshowroom.ModelClasses;
 
 public class CARS {
      String carModel;

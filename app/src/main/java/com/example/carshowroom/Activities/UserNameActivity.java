@@ -1,4 +1,4 @@
-package com.example.carshowroom;
+package com.example.carshowroom.Activities;
 
 import android.app.ActionBar;
 import android.app.AlertDialog;
@@ -16,6 +16,8 @@ import android.widget.Switch;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+
+import com.example.carshowroom.R;
 
 public class UserNameActivity extends AppCompatActivity {
     Switch switchMode;
@@ -131,7 +133,7 @@ public class UserNameActivity extends AppCompatActivity {
                     new Handler().postDelayed(new Runnable() {
                         @Override public void run() {
 
-                            Intent i = new Intent(UserNameActivity.this,MainActivity.class);
+                            Intent i = new Intent(UserNameActivity.this, MainActivity.class);
                             i.putExtra("UserName",userName);
                             startActivity(i);
                             finish();

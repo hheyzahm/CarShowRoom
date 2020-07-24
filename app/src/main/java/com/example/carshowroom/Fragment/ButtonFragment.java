@@ -1,20 +1,24 @@
-package com.example.carshowroom;
+package com.example.carshowroom.Fragment;
 
 import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
-import androidx.fragment.app.Fragment;
+import com.example.carshowroom.R;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Button_Fragment extends Fragment {
+public class ButtonFragment extends Fragment {
 
 
-    public Button_Fragment() {
+    public ButtonFragment() {
         // Required empty public constructor
 
     }

@@ -1,7 +1,6 @@
-package com.example.carshowroom;
+package com.example.carshowroom.ModelClasses;
 
         import android.app.Application;
-        import android.widget.Toast;
 
         import java.io.BufferedReader;
         import java.io.File;
