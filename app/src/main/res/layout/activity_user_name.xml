@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserNameActivity"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/layout_userName">
+    <Switch
+        android:id="@+id/switchMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Logo_imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Logo_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/User_naame_editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        />
+
+
+    <EditText
+        android:id="@+id/User_naame_editText"
+        android:layout_width="287dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+
+        android:textColorHint="@android:color/darker_gray"
+        android:gravity="center"
+        android:hint="User Name"
+        android:textColor="@android:color/white"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        app:layout_constraintTop_toBottomOf="@+id/Logo_imageView"
+        android:background="@drawable/button_border_black"/>
+
+    <Button
+        android:id="@+id/Save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Cancel_button"
+        app:layout_constraintTop_toBottomOf="@+id/User_naame_editText"
+        app:layout_constraintVertical_bias="0.203"
+        android:background="@drawable/button_border_black"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/Cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Save_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/User_naame_editText"
+        app:layout_constraintVertical_bias="0.203"
+        android:background="@drawable/button_border_black"
+        android:textColor="@android:color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

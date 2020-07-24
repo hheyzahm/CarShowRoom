@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">5. CarShowRoom</string>
+    <string name="OwnerInfo">Owner</string>
+    <string name="OWNERINFO">OWNER INFO</string>
+    <string name="CARINFO">CAR INFO</string>
+    <string name="addnew">Add new CAR </string>
+    <string name="carModel">Car Model</string>
+    <string name="Maker">Car Maker </string>
+    <string name="ownerName">Owner Name</string>
+    <string name="ownerNumber">Owner Number</string>
+    <string name="carModelError">Enter Car Model</string>
+    <string name="MakerError">Enter Car Maker </string>
+    <string name="ownerNameError">Enter Owner Name</string>
+    <string name="ownerNumberError">Enter Owner Number</string>
+    <string name="ownerNumberErr">Number is invalid length cannot be less then 11</string>
+    <string name="MakerErr">Please Enter From mercedes , Nissan and Volkswagen please !!!!!!!!!!!!!</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+
+<string name="UserNameError">please enter suitable Name</string>
+
+
+</resources>

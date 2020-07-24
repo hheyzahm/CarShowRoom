@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Car_List_array">
+        <item>Select One car from List please</item>
+        <item>Mercedes</item>
+        <item>Nissan</item>
+        <item>Volkswagen</item>
+    </string-array>
+</resources>

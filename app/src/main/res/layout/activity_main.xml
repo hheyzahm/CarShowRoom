@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:id="@+id/Layout_Portrait"
+    >
+
+    <fragment
+        android:id="@+id/list_fragmet"
+        android:name="com.example.carshowroom.CarListFragment"
+        android:layout_width="match_parent"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024"
+        tools:layout="@layout/fragment_car_list"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/list_fragmet"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_weight="2"
+        >
+
+        <fragment
+            android:id="@+id/ButtonFragment"
+            android:name="com.example.carshowroom.ButtonFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_button" />
+
+        <fragment
+            android:id="@+id/DetailsFragement"
+            android:name="com.example.carshowroom.DetailsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_details" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
